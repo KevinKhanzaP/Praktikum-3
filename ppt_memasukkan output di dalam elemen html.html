@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- inisialisasi bahasa inggris -->
+  <head>
+    <meta charset="utf-8"> <!-- informasi karakter kode dengan ketentuan UTF-8 -->
+    <title>Memasukkan Output Di Dalam Elemen</title> <!-- judul -->
+  </head>
+  <body>
+    <p id="greet"></p> <!-- menulis paragraf dengan memanggil id greet -->
+    <p id="result"></p> <!-- menulis paragraf dengan memanggil id result -->
+    <script>
+      document.getElementById("greet").innerHTML= "Hello Kevin !";
+       //menuliskan text dalam elemen dengan id greet
+      var x=50; //deklarasi var x
+      var y=30; //deklarasi var y
+      var sum=x+y; //deklarasi var sum yaitu var x + var y
+      document.getElementById("result").innerHTML= sum;
+      //menuliskan hasil dari var sum dalam elemen dengan id result
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- inisialisasi bahasa inggris -->
+  <head>
+    <title>Penggunaan Operator Switch</title> <!-- judul -->
+  </head>
+  <script language="Javascript"> // inisialisasi bahasa Javascript
+  function test () { //deklarasi function test
+    val1=window.prompt("Input Nilai (1-5)")
+    //deklarasi var val1 yang memanggil popup pada vrowser yang diinputkan user
+    switch (val1) //deklarasi switch pada val1
+  {
+  case "1" : //deklarasi case 1 yang menuliskan kalimat sesuai input user
+  document.write("bilangan satu")
+  break //berfungsi menghentikan eksekusi yang berjalan
+
+  case "2" : //deklarasi case 2 yang menuliskan kalimat sesuai input user
+  document.write("bilangan dua")
+  break //berfungsi menghentikan eksekusi yang berjalan
+
+  case "3" : //deklarasi case 3 yang menuliskan kalimat sesuai input user
+  document.write("bilangan tiga")
+  break //berfungsi menghentikan eksekusi yang berjalan
+
+  case "4" : //deklarasi case 4 yang menuliskan kalimat sesuai input user
+  document.write("bilangan empat")
+  break //berfungsi menghentikan eksekusi yang berjalan
+
+  case "5" : //deklarasi case 5 yang menuliskan kalimat sesuai input user
+  document.write("bilangan lima")
+  break //berfungsi menghentikan eksekusi yang berjalan
+
+  default : //deklarasi default yang dijalankan jika input tidak sesuai case
+  document.write("bilangan lainnya")
+  }
+  }
+  </script>
+  <body>
+    <input type="button" name="button1" value="switch" onclick=test()>
+    <!-- membuat button pada halaman yang menjalankan function test saat diklik -->
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- inisialisasi bahasa inggris -->
+  <head>
+    <title>Form Button</title> <!-- judul -->
+  </head>
+  <body>
+  <script language="Javascript"> //inisialisasi Javascript
+    function ubahWarnaLB(warna) { //deklarasi function berisi warna untuk bg
+      document.bgColor=warna;
+    }
+    function ubahWarnaLD(warna) { //deklarasi function berisi warna untuk font
+      document.fgColor=warna;
+    }
+  </script>
+  <h1>TES BERUBAH WARNA</h1> <!-- tulisan bertipe header 1 -->
+  <form> <!-- membuat form untuk inputan data -->
+    <input type="button" value="Latar Belakang hijau" onclick="ubahWarnaLB('GREEN')">
+    <!-- membuat button guna mengubah warna bg ke hijau saat diklik -->
+    <input type="button" value="Latar Belakang putih" onclick="ubahWarnaLB('WHITE')">
+    <!-- membuat button guna mengubah warna bg ke putih saat diklik -->
+    <input type="button" value="Latar Belakang Button kuning" onclick="ubahWarnaLD('YELLOW')">
+    <!-- membuat button guna mengubah warna font ke kuning saat diklik -->
+    <input type="button" value="Latar Belakang Button biru" onclick="ubahWarnaLD('BLUE')">
+    <!-- membuat button guna mengubah warna font ke biru saat diklik -->
+  </form>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- inisialisasi bahasa inggris -->
+  <head>
+    <title>Form input</title> <!-- judul -->
+  </head>
+  <script language="Javascript"> //inisialisasi bahasa Javascript
+    function test () { //deklarasi function test
+      var val1=document.kirim.T1.value //deklarasi var val1 sebagai T1
+      if (val1%2==0) //deklarasi seleksi kondisi val1
+
+      document.kirim.T2.value="bilangan genap" //jika iya, maka muncul kalimat ini
+      else
+      document.kirim.T2.value="bilangan ganjil" //jika tidak, muncuk kalimat ini
+    }
+
+  </script>
+  <body>
+    <form method="post" name="kirim"> <!-- berguna mengirimkan nilai var -->
+      <p>BIL <input type="text" name="T1" size="20"> Merupakan BIL
+             <!-- membuat kolom inputan untuk var T1 -->
+             <input type="text" name="T2" size="20"> </p>
+             <!-- membuat kolom inputan untuk var T2 -->
+      <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+      <!-- membuat button untuk memproses data yang telah diinput user -->
+    </form>
+  </body>
+</html>

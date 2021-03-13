@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- inisialisasi bahasa inggris -->
+  <head>
+   <title>Latihan Kalkulator</title> <!-- judul -->
+  </head>
+  <script type="text/javascript"> //inisialisasi javascript
+    function tambah() { //deklarasi function tambah
+     var angka1=parseFloat(document.calculator.angka1.value); //deklarasi var angka1
+     var angka2=parseFloat(document.calculator.angka2.value); //deklarasi var angka2
+     var hasil= angka1+angka2; //deklarasi var hasil untuk pertambahan
+     document.calculator.hasil.value=hasil; //menuliskan hasil var hasil
+    }
+    function kurang() { //deklarasi function kurang
+     var angka1=parseFloat(document.calculator.angka1.value); //deklarasi var angka1
+     var angka2=parseFloat(document.calculator.angka2.value);  //deklarasi var angka2
+     var hasil= angka1-angka2; //deklarasi var hasil untuk pengurangan
+     document.calculator.hasil.value=hasil; //menuliskan hasil var hasil
+    }
+    function kali() { //deklarasi function kali
+     var angka1=parseFloat(document.calculator.angka1.value); //deklarasi var angka1
+     var angka2=parseFloat(document.calculator.angka2.value); //deklarasi var angka2
+     var hasil= angka1*angka2; //deklarasi var hasil untuk perkalian
+     document.calculator.hasil.value=hasil; //menuliskan hasil var hasil
+    }
+    function bagi() { //deklarasi function bagi
+     var angka1=parseFloat(document.calculator.angka1.value); //deklarasi var angka1
+     var angka2=parseFloat(document.calculator.angka2.value); //deklarasi var angka2
+     var hasil= angka1/angka2; //deklarasi var hasil untuk pembagian
+     document.calculator.hasil.value=hasil; //menuliskan hasil var hasil
+    }
+  </script>
+  <body>
+   <form name="calculator"> <!-- membuat form dengan inisial nama calculator -->
+    <table>
+     <tr> <!-- membuat kolom tabel inputan var angka1 -->
+      <td>Masukkan Angka 1</td><td>:</td><td><input type="number" name="angka1"></td>
+     </tr>
+     <tr> <!-- membuat kolom tabel inputan var angka2 -->
+      <td>Masukkan Angka 2</td><td>:</td><td><input type="number" name="angka2"></td>
+     </tr>
+     <tr> <!-- membuat kolom tabel untuk var hasil -->
+      <td>Hasil</td><td>:</td><td><input type="number" name="hasil"></td>
+     </tr>
+     <tr> <!-- membuat 4 button dengan mode +,-,*, dan / -->
+      <td colspan="3" align="center">
+       <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+       <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+       <input class="tombol" type="button" onclick="kali()" value="  *  ">
+       <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+      </td>
+     </tr>
+    </table>
+   </form>
+</body>
+</html>

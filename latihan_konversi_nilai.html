@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- inisialisasi bahasa inggris -->
+  <head>
+    <title>Form input</title> <!-- judul -->
+  </head>
+  <script language="Javascript"> //inisialisasi bahasa Javascript
+    function test () { //deklarasi function test
+      var val1=document.kirim.T1.value //deklarasi var val1 sebagai T1
+
+      if (val1>=81 && val1<=100) //deklarasi seleksi kondisi val1
+      document.kirim.T2.value="A" //jika sesuai, maka muncul kalimat ini
+
+      else if (val1>=71 && val1<=80) //deklarasi seleksi kondisi val1
+      document.kirim.T2.value="AB" //jika sesuai, muncuk kalimat ini
+
+      else if (val1>=66 && val1<=70) //deklarasi seleksi kondisi val1
+      document.kirim.T2.value="B" //jika sesuai, muncuk kalimat ini
+
+      else if (val1>=61 && val1<=65) //deklarasi seleksi kondisi val1
+      document.kirim.T2.value="BC" //jika sesuai, muncuk kalimat ini
+
+      else if (val1>=56 && val1<=60) //deklarasi seleksi kondisi val1
+      document.kirim.T2.value="C" //jika sesuai, muncuk kalimat ini
+
+      else if (val1>=41 && val1<=55) //deklarasi seleksi kondisi val1
+      document.kirim.T2.value="D" //jika sesuai, muncuk kalimat ini
+
+      else if (val1>=0 && val1<=40) //deklarasi seleksi kondisi val1
+      document.kirim.T2.value="E" //jika sesuai, muncuk kalimat ini
+    }
+
+  </script>
+  <body>
+    <form method="post" name="kirim"> <!-- berguna mengirimkan nilai var -->
+      <p>Masukkan Nilai <input type="text" name="T1" size="20"> =
+             <!-- membuat kolom inputan untuk var T1 -->
+             <input type="text" name="T2" size="20"> </p>
+             <!-- membuat kolom hasil untuk var T2 -->
+      <p><input type="button" value="KONVERSI" name="B1" onclick=test()></p>
+      <!-- membuat button untuk memproses data yang telah diinput user -->
+    </form>
+  </body>
+</html>
